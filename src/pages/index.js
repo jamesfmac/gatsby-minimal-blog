@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
-import { Layout, Article, Wrapper, Button, SectionTitle } from 'components';
-import { media } from '../utils/media';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import styled from "styled-components";
+import { Layout, Article, Wrapper, Button, SectionTitle } from "components";
+import { media } from "../utils/media";
 
 const Content = styled.div`
   grid-column: 2;
@@ -39,16 +39,15 @@ const Hero = styled.div`
 
 const IndexPage = ({
   data: {
-    allMarkdownRemark: { edges: postEdges },
-  },
+    allMarkdownRemark: { edges: postEdges }
+  }
 }) => (
   <Layout>
     <Wrapper>
       <Hero>
-        <h1>Hi.</h1>
+        <h1>Hey.</h1>
         <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-          React apps with the best UX users can get.
+          I&apos;m James McManamey, I write about the things that I&apos;ve learnt (usually painfully) building products and teams for 10+ years.
         </p>
         <Link to="/contact">
           <Button big>
@@ -82,9 +81,9 @@ export default IndexPage;
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
+      edges: PropTypes.array.isRequired
+    })
+  }).isRequired
 };
 
 export const IndexQuery = graphql`
