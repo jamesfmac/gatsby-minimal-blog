@@ -5,7 +5,7 @@ module.exports = {
   siteTitleAlt: 'James McManamey - Blog', // Alternative Site title for SEO
   siteUrl: 'https://blog.jmcmanamey.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
+  siteBanner: '/social/banner.png', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/j-favicon.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Thoughts on building products, teams, and companies', // Your site description
   author: 'James McManamey', // Author for schemaORGJSONLD
