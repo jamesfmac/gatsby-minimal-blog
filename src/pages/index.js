@@ -46,10 +46,7 @@ const IndexPage = ({
     <Wrapper>
       <Hero>
         <h1>Hey.</h1>
-        <p>
-          I&apos;m James McManamey, I write about the things that I&apos;ve learnt (usually painfully) building products
-          and teams for 10+ years.
-        </p>
+        <p>I&apos;m James McManamey, I&apos;ve been building products and teams for 10+ years.</p>
         <Link to="/contact">
           <Button big>
             <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
