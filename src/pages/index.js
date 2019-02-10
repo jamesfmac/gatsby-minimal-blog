@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Layout, Article, Wrapper, Button, SectionTitle } from 'components';
+import { Layout, Article, Wrapper, Button, SectionTitle, Banner } from 'components';
 import { media } from '../utils/media';
 
 const Content = styled.div`
@@ -45,6 +45,7 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
+        <Banner>James McManamey</Banner>
         <h1>Hey.</h1>
         <p>
           I&apos;m James McManamey, I&apos;ve been building products and teams for 10+ years. I write about the mistakes
@@ -60,7 +61,7 @@ const IndexPage = ({
         </Link>
       </Hero>
       <Content>
-        <SectionTitle>Latest stories</SectionTitle>
+        <SectionTitle>Latest posts</SectionTitle>
         {postEdges.map(post => (
           <Article
             title={post.node.frontmatter.title}
